@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th{
+        background-color: #dddddd85
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+    background-color: #ffffff;
+    }
+    button{
+    padding: 8px;
+    }
+    #tr1{
+      border: none;
+    }
+    </style>
+</head>
+<body>
+
+    <h2>EXAMPLE NO.1</h2>
+    
+    <table>
+      <tr>
+        <th>Batch</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Course</th>
+        <th>Duration</th>
+      </tr>
+      <tr>
+        <td id="batch"></td>
+        <td class="user"></td>
+        <td class="uaddress"></td>
+        <td id="course"></td>
+        <td id="duration"></td>
+      </tr>
+      <tr>
+        <td id="bbatch"></td>
+        <td class="user"></td>
+        <td class="uaddress"></td>
+        <td id="course1"></td>
+        <td id="duration1"></td>
+      </tr>
+      <tr>
+        <td id="bbatch1"></td>
+        <td class="user"></td>
+        <td class="uaddress"></td>
+        <td id="course2"></td>
+        <td id="duration2"></td>
+      </tr>
+      <tr>
+        <td id="bbatch2"></td>
+        <td class="user"></td>
+        <td class="uaddress"></td>
+        <td id="course3"></td>
+        <td id="duration3"></td>
+      </tr>
+    </table>
+
+    <!-- example 2 -->
+    <table id="trmain">
+      <h2>EXAMPLE NO.2</h2>
+    </table>
+    <!-- example 3 -->
+    <table>
+      <h2>EXAMPLE NO.3</h2>
+
+      <tr>
+        <td id="name44"></td>
+        <td id="email44"></td>
+        <td id="url44"></td>
+        <td id="add44"></td>
+      </tr>
+      <tr>
+        <td id="tr1"><button onclick="delAdd();">Delete Address</button>
+        <button onclick="ClearAll();">Delete Address</button></td>
+      </tr>
+    </table>
+    </body>
+    <script src="./app.js"></script>
+</html>

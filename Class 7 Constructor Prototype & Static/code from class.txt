@@ -1,0 +1,44 @@
+// class UserData {
+//     constructor() {
+//         console.log("constructor function");
+//     }
+//     userName() {
+//         console.log("iskilles mithi thar")
+//     }
+
+//     userEmail() {
+//         console.log("info@iskillers.com")
+//     }
+
+//    static userAddrss(){
+//         console.log("Mithi Thar")
+//     }
+
+// }
+
+// var user1 = new UserData();
+// user1.userName();
+// user1.userEmail();
+// UserData.userAddrss();
+// var a = new Object();
+
+
+class UserData {
+    constructor(name, mobNum) {
+        this.userName = name,
+            this.userMob = mobNum
+    }
+
+
+    showData() {
+        // console.log("your name is " + this.userName + " and your mobiel number is" +  this.userMob);
+        console.log(`your name is ${this.userName} and your mobiel number is ${this.userMob}`)
+    }
+}
+
+var a = new UserData("iskillers", "032323233");
+var b = new UserData("iskillers academy", "0111111111");
+var c = new UserData("iskillers software house", "65665656565");
+a.showData()
+b.showData()
+c.showData()

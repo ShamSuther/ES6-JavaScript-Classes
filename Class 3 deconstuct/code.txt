@@ -1,0 +1,108 @@
+// es5
+// var obj1 = {
+//     firstname: "iskillers",
+//     lastname: "academy",
+//     fullName: function () {
+//         console.log(this.firstname, this.lastname)
+//     }
+// }
+// console.log(obj1.fullName())
+
+
+// es6
+// var obj2 = {
+//     firstname: "iskillers",
+//     lastname: "academy",
+//     fullName () {
+//         console.log(this.firstname, this.lastname)
+//     }
+// }
+// console.log(obj2.fullName());
+
+
+
+// var obj3 = {
+//     "first Name" :"iskillers mithi"
+// }
+// // console.log(obj3.firstName)
+// mobNum = "mob number";
+// obj3["lastname"] = "academy"
+// console.log(obj3["first Name"]);
+// console.log(obj3)
+
+
+// var obj4 = {
+//     firstName:"iskillers",
+//     lastName :"academy",
+//     address:"mithi"
+// }
+// 
+
+// es5
+// console.log(obj4);
+// console.log(obj4.firstName);
+// console.log(obj4.lastName);
+// console.log(obj4.address);
+
+//es6
+// let {firstName,lastName,address} = obj4;
+// console.log(firstName);
+// console.log(lastName);
+// console.log(address);
+
+
+
+// let node = {
+//     type: "company",
+//     name: "iskillers",
+//     loc: {
+//         start: {
+//             line: 1,
+//             column: 1
+//         },
+//         end: {
+//             endline: 4,
+//             endcolumn: 4
+//         }
+//     }
+// };
+
+//es5
+// console.log(node.type)
+// console.log(node.type)
+// console.log(node.loc.start.line)
+// console.log(node.loc.start.column);
+// console.log(node.loc.end.line)
+// console.log(node.loc.end.column)
+
+
+//es6
+// let {
+//     type,
+//     name,
+//     loc: {
+//         start: {
+//             line,
+//             column
+//         },
+//         end: {
+//             endline,
+//             endcolumn
+//         }
+//     }
+// } = node;
+// console.log(type)
+// console.log(name)
+// console.log(line)
+// console.log(column)
+// console.log(endline)
+// console.log(endcolumn);
+
+
+let colors = [ "red", "green", "blue" ];
+// let [firstColor,secondColor,thirdColor] = colors;
+let [,,thirdColor] = colors;
+console.log(colors[2])
+// console.log(firstColor)
+// console.log(secondColor)
+console.log(thirdColor)

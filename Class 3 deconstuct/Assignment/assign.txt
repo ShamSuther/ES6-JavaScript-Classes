@@ -1,0 +1,28 @@
+const hexCode = {
+  color: "pink",
+  code: {
+    hex: "#FFC0CB	",
+    id: 1,
+    lightpinkColor: {
+      lightpinkName: "lightpink",
+      lightpinkHex: "#B0171F",
+      lightpinkId: 2,
+    },
+  },
+};
+
+const countryList = [
+  "Afghanistan",
+  "Albania",
+  "Algeria",
+  "American Samoa",
+  "Andorra",
+  "Angola",
+  "Anguilla",
+  "Antarctica",
+  "Antigua and Barbuda",
+];
+
+
+console.log(hexCode)
+console.log(countryList)

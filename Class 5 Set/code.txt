@@ -1,0 +1,76 @@
+// let node = {
+//     type: "company",
+//     name: "iskillers",
+//     loc: {
+//         start: {
+//             line: 1,
+//             column: 1,
+//         },
+//         end: {
+//             endline: 4,
+//             endcolumn: 4,
+//         },
+//     },
+//     range: [100, 3],
+// };
+
+
+// //   console.log(node.range[1])
+
+// let {
+//     name,
+//     type,
+//     loc: {
+//         start: {
+//             line,
+//             column
+//         },
+//         end: {
+//             endline,
+//             endcolumn
+//         }
+//     },
+//     range :[
+//     value1,
+//     value2
+//     ]
+//                     } = node;
+
+//                     console.log(value1)
+
+
+
+// var obj1 = {
+//     };
+// var obj2 = new Object();
+// console.log(obj1);
+// console.log(obj2);
+
+
+// obj1.name = "iskillers";
+// obj2.email = "info@iskillers";
+// console.log(obj1);
+// console.log(obj2);
+
+
+// let set = new Set();
+// set.add(5);
+// set.add("5");
+// set.add("iskillers")
+// console.log(set.size); // 2
+// console.log(set); // 2
+
+
+// let set = new Set([1, 2, "iskillers"]);
+// set.forEach(function (value, key, checkPro) {
+//     console.log("value =====>>>>> ", value)
+//     console.log("key ====>>>>> ", key);
+//     console.log("checkPro ======>>>> ", checkPro === set)
+// })
+
+
+
+let set = new Set([1, 2, "iskillers",2,1]);
+let ary = [...set]
+console.log(set)
+console.log(ary)

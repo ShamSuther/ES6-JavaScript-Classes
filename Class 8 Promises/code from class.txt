@@ -1,0 +1,99 @@
+// var pro = new Promise((resove, reject) => {
+
+// }).then((result) => {
+//     console.log(result)
+// }).catch((error) => {
+//     console.log(error)
+// })
+
+
+
+
+// var b = new Promise(() =>{
+
+// })
+
+// var userData = true;
+// var myData = new Promise((resolve, reject) => {
+//     if (userData) {// userData === true
+//         resolve("successful !")
+//     } else {
+//         reject("error !")
+//     }
+// })
+
+// console.log(myData);
+
+
+
+
+// var myData = (userData) => { 
+// return new Promise((resolve, reject) => {
+//     if (userData) {// userData === true
+//         resolve("successful !")
+//     } else {
+//         reject("error !")
+//     }
+// })
+// }
+
+// // var a = myData(false);
+// console.log(myData(false))
+
+// setTimeout(() => {
+//     console.log("setTimeout function")
+// },5000);
+
+
+
+// var myData = (userData) => {
+//     return new Promise((resolve, reject) => {
+//         console.log("pending .......");
+//         setTimeout(() => {
+//             if (userData) {// userData === true
+//                 resolve("successful !")
+//             } else {
+//                 reject("error !")
+//             }
+//         }, 5000);
+
+//     })
+// }
+
+// let successful = (result) => {
+//     console.log(result)
+// }
+
+// let reject = (error) => {
+//     console.log(error)
+// }
+
+
+// myData(true).then(successful);
+// myData(false).catch(reject);
+
+// myData(false).then(successful).catch(reject)
+
+
+
+
+
+
+var myData = (userData) => {
+    return new Promise((resolve, reject) => {
+            console.log("pending .......");
+                    setTimeout(() => {
+                                if (userData) {// userData === true
+                                                resolve("successful !")
+                                                            } else {
+                                                                            reject("error !")
+                                                                                        }
+                                                                                                }, 5000);
+    })
+    }
+
+myData(false).then((result)=>{
+console.log(result)
+}).catch((error)=>{
+    console.log(error)
+    });

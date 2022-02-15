@@ -1,0 +1,65 @@
+// var a = 100;
+// var b = 20;
+
+// console.log(Math.max(a,b));
+
+
+// var ary = [10,30,50,400];
+// console.log(Math.max(...ary));
+
+// function Sum(name, a, b, c) {
+function Sum(name, ...ary) { // rest 
+    console.log(arguments)
+    // console.log(name, (a + b + c))
+    let sum = 0;
+    // for (var i = 0; i < ary.length; i++) { // es5
+    for (let i in ary) { // es6
+        sum += ary[i] // 0 + 10 = 10 + 20 = 30 + 30 = 60 + 
+    }
+    console.log(sum)
+}
+// Sum("iskillers", 10, 20, 30)
+let ary2 = [10, 20, 30]
+Sum("iskillers", ...ary2)// spread
+
+
+
+
+var ary3 = [10, 20, 30, 40];
+var ary5 = [60, 70];
+// console.log(ary3);
+// console.log(...ary3);
+// console.log([...ary3]);
+
+var ary4 = [...ary3];
+
+// var ary6 = ary3.concat(ary5); es5
+// console.log('ary6 =====>>>>> ',ary6)
+
+var ary7 = [...ary3, ... ary5,100] // es6
+console.log('ary7 =====>>>>> ',ary7)
+
+
+console.log(ary3)
+console.log(ary4);
+
+ary3.push(50);
+
+console.log(ary3)
+console.log(ary4);
+
+
+
+
+var obj1 = {
+    name : "iskillers",
+    mob:"0323323323"
+}
+
+var obj2 = {
+    email :"info@iskillers.com"
+}
+
+
+var obj3 = {...obj1 , ...obj2};
+console.log("object 03 ===>>>>> ",obj3)

@@ -1,0 +1,35 @@
+var nameShow = document.getElementById("name");
+let userData = {
+    name :"iskillers"
+};
+let {name} = userData;
+nameShow.innerHTML = name
+// nameShow.innerHTML = "iskillers academy"
+
+var map = new Map();
+console.log(map);
+map.set("name" , "iskillers");
+map.set("mob" , "03233233232");
+map.set("email","info@gmail.com");
+console.log(map);
+map.delete("name");
+console.log(map.get("email"));
+console.log(map);
+console.log(map.has("name")); // true
+map.clear();
+console.log(map);
+
+// let map = new Map(),
+//  key1 = {},
+//  key2 = {};
+// map.set(key1, 5);
+// map.set(key2, 42);
+// console.log(map); 
+// console.log(map.get(key1)); // 5
+// console.log(map.get(key2)); // 42
+
+// function abc(){
+//    a = 10
+// }
+// abc();
+// console.log(a);
